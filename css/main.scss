@@ -1,0 +1,485 @@
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  clip-path: polygon(0 27%, 0 100%, 50% 65%, 100% 100%, 100% 27%);
+
+  main color #57C5C6
+
+  svg {
+  filter: drop-shadow(0 0 5px #969696)
+}
+
+
+<svg>
+  <polygon points="0,0 100,0 100,100 50,70 0,100" style="fill:rgba(87,197,198,1);">Langkah 3</polygon>
+  </svg> 
+*/
+:root {
+  --primary-color: #4DAEAE;
+  --secondary-color: #FAA41A;
+  --third-color: #142238;
+}
+
+:root {
+  --primary-font-size: 1.2em;
+  --secondary-font-size: .9em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+// navbar
+
+.nav .container {
+  background: #ffffff;
+  display: grid;
+  grid-template-columns: 180px auto;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 0;
+
+  .logo img {
+    width: 100px;
+    height: 70px;
+    display: grid;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+  }
+
+  .nav-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .nav-cta {
+    background-color: var(--primary-color);
+    padding: .5em 4em .5em 4em;
+    margin: 0;
+    border-radius: .2em;
+  }
+  
+  a {
+   text-decoration: none;
+   color: #ffffff;
+   font-weight: bold;
+ }
+
+}
+
+//HERO SECTION
+
+.hero {
+  margin-bottom: 5em;
+
+  background-image: url(../images/car-glass.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 60em;
+  display: flex;
+  justify-content: flex-end;
+
+  .container{
+    background-color: #000000;
+    background: rgba(0, 0, 0, 0.4);
+    width: 40em;
+    height: 40em;
+    margin: 6em 2em 0 0;
+    box-shadow: 0px 0px 7px black;
+    /*
+    filter: drop-shadow(0 0 5px #000000);*/
+    
+    .left-col {
+      color: #ffffff;
+      margin: 3em;
+      text-transform: uppercase;
+
+      p {
+        margin: 0;
+      }
+      
+      .hero-text {
+        font-size: 3em;
+        font-weight: bold;
+        text-transform: capitalize;
+        font-size: 3.5em;
+        margin: .1em 0 .3em 0;
+        line-height: 1;
+      }
+
+      .testbox {
+        margin-top: 1em;
+      }
+
+      input, select {
+        outline: none;
+      }
+      
+      ::placeholder {
+        color: #000000;
+      }
+
+      .servis {
+        margin: 1em 0 0 0;
+      }
+
+        input {
+          width: calc(100% - 10px);
+          margin-bottom: 10px;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          padding: 5px;
+
+        }  
+
+        select {
+          width: 100%;
+          margin-bottom: 1.5em;
+          border: 1px solid #ccc;
+          border-radius: 3px;
+          padding: 5px;
+        }
+
+        .tempah-cta {
+          font-weight: bold;
+          text-decoration: none;
+          background-color: var(--primary-color);
+          padding: .5em 4em .5em 4em;
+          border-radius: .2em;
+          color: #ffffff;
+        }
+    
+    }
+  }
+}
+
+//CONTENT SECTIONS
+.content  {
+  
+  .title-content {
+    display: grid;
+    justify-content: center;
+   font-size: 2em;
+   font-weight: bold;
+ }
+  .description {
+    margin: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+  img {
+    width: 3em;
+    height: 3em;
+  }
+
+  .desc-sec {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    flex-direction: column;
+    padding: 2em;
+    margin: 1em auto;
+
+    .desc-word {
+      font-size: 1em;
+      font-weight: bold;
+    }
+  }
+
+  
+}
+
+//BENEFITS SECTIONS
+
+.benefits {
+  margin-bottom: 5em;
+
+  .container {
+    display: flex;
+  }
+
+  .image {
+    width: 70em;
+    height: 35em;
+    background-image: url(../images/Sika.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+  }
+
+  h1 {
+    display: grid;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  img {
+    width: 3em;
+    height: 3em;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+  }
+
+  .benefits-img {
+    display: flex;
+
+    p {
+      font-weight: normal;
+      font-size: 1em;
+    }
+
+    div {
+      margin:2em 0 0 2em;
+      padding-right: 2em;
+    }
+  }
+
+
+}
+
+//STEPS SECTIONS
+.steps {
+  margin-bottom: 5em;
+
+  .head-steps {
+    display: grid;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+  .box-steps {
+    margin: 0 5em;
+    padding: 20px 40px;
+    display: flex;
+    flex: 1;
+  }
+
+  
+  .description-steps {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+    margin: .5em;
+    border-radius: 1em;
+    margin: 2em;
+    padding: 4em 0;
+    
+    
+    .steps-image {
+      display: grid;
+      align-items: center;
+      justify-content: center;
+      width: 5em;
+      height: 5em;
+      padding: 1em;
+      margin-top: -7em;
+
+      .image {
+        width: 5em;
+        height: 5em;
+      }
+    }
+    
+    .steps-subhead {
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    
+    .word-steps {
+      font-size: 1.3em;
+      font-weight: bold;
+      width: 300px;
+      height: 100px;
+      margin: 1em 0 -1em 0;
+      
+    }
+
+    .list-steps {
+      width: 300px;
+      height: 100px;
+    }
+
+    .whatsapp-steps {
+      font-weight: bold;
+    }
+    
+  }
+
+}
+
+
+// Reviews Section
+.reviews {
+  margin-bottom: 5em;
+  // justify-content: center;
+  img {
+    width: 2em;
+    height: 2em;
+  }
+  
+  .head-review {
+    display: grid;
+    justify-content: center;
+    font-size: 2em;
+    margin: .1em auto;
+  }
+  .container {
+    margin: 2.5em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+    .box-review {
+
+      div {
+        margin: 1em auto;
+        word-wrap: break-word;
+      }
+      display: flex;
+      margin: 0 1em;
+      flex: 1;
+      background-color: rgb(238, 238, 238);
+      padding: 2.5em;
+      box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+      
+      .quote-review {
+        margin-right: 2em;
+      }
+      .word-review {
+        //come to this later
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+        color: rgb(150, 150, 150);
+      }
+
+      .name-review {
+        font-size: 1.5rem;
+        color: rgb(50, 50, 50);
+        margin-bottom: .25rem;
+      }
+
+      .rating {
+          color: rgb(253, 180, 42);
+          margin: 1rem 0;
+      }
+
+    }
+
+}
+
+// CONTACT SECTION
+.footer{
+  margin-top: 10em;
+  background-color: var(--third-color);
+  color: #ffffff;
+
+  .title-footer{
+    font-size: 2em;
+  }
+  
+  .container {
+    padding: 3em;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .company-footer, .middle-footer, .icon-section {
+    display: flex;
+    margin: 2.5em 2em;
+    flex: 1;
+    flex-direction: column;
+    // flex-direction: column;
+  }
+
+  // Company Brand
+  .company-footer {
+    color: #ffffff;
+    font-size: var(--secondary-font-size);
+
+    div{
+      padding-top: 2em;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 2em;
+
+      span {
+        color: var(--secondary-color);
+      }
+    }
+    img {
+      width: 15em;
+      height: auto;
+    }
+  }
+
+  // Location Footer
+  .middle-footer {
+    font-size: var(--secondary-font-size);
+
+    .contact {
+      margin-top: 2em;
+    
+        a {
+        font-size: 1.2em;
+        color: var(--secondary-color);
+      }
+    }
+
+    .middle-title {
+      font-size: .7em;
+      margin-top: 1.5em;
+
+      .location-footer h1, p{
+        margin: 0;
+        
+        h1 {
+          font-size: 1.5em;
+        }
+
+        p{
+          font-size: 1.2em;
+        }
+      }
+    }
+
+  }
+
+  // Icons Section
+
+  .icon-footer {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: 1em 2em 0 0;
+      width: 2em;
+      height: auto;
+    }
+  }
+
+
+
+
+}
+           
+
+
+

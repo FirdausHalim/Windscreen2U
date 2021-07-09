@@ -1,0 +1,546 @@
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  clip-path: polygon(0 27%, 0 100%, 50% 65%, 100% 100%, 100% 27%);
+
+  main color #57C5C6
+
+  svg {
+  filter: drop-shadow(0 0 5px #969696)
+}
+
+
+<svg>
+  <polygon points="0,0 100,0 100,100 50,70 0,100" style="fill:rgba(87,197,198,1);">Langkah 3</polygon>
+  </svg> 
+*/
+:root {
+  --primary-color: #4DAEAE;
+  --secondary-color: #FAA41A;
+  --third-color: #142238;
+}
+
+:root {
+  --primary-font-size: 1.2em;
+  --secondary-font-size: .9em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+.nav .container {
+  background: #ffffff;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 180px auto;
+      grid-template-columns: 180px auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+  margin: 0;
+}
+
+.nav .container .logo img {
+  width: 100px;
+  height: 70px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0%;
+  padding: 0;
+}
+
+.nav .container .nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .container .nav-cta {
+  background-color: var(--primary-color);
+  padding: .5em 4em .5em 4em;
+  margin: 0;
+  border-radius: .2em;
+}
+
+.nav .container a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.hero {
+  margin-bottom: 5em;
+  background-image: url(../images/car-glass.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 60em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.hero .container {
+  background-color: #000000;
+  background: rgba(0, 0, 0, 0.4);
+  width: 40em;
+  height: 40em;
+  margin: 6em 2em 0 0;
+  -webkit-box-shadow: 0px 0px 7px black;
+          box-shadow: 0px 0px 7px black;
+  /*
+    filter: drop-shadow(0 0 5px #000000);*/
+}
+
+.hero .container .left-col {
+  color: #ffffff;
+  margin: 3em;
+  text-transform: uppercase;
+}
+
+.hero .container .left-col p {
+  margin: 0;
+}
+
+.hero .container .left-col .hero-text {
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 3.5em;
+  margin: .1em 0 .3em 0;
+  line-height: 1;
+}
+
+.hero .container .left-col .testbox {
+  margin-top: 1em;
+}
+
+.hero .container .left-col input, .hero .container .left-col select {
+  outline: none;
+}
+
+.hero .container .left-col ::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.hero .container .left-col :-ms-input-placeholder {
+  color: #000000;
+}
+
+.hero .container .left-col ::-ms-input-placeholder {
+  color: #000000;
+}
+
+.hero .container .left-col ::placeholder {
+  color: #000000;
+}
+
+.hero .container .left-col .servis {
+  margin: 1em 0 0 0;
+}
+
+.hero .container .left-col input {
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.hero .container .left-col select {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.hero .container .left-col .tempah-cta {
+  font-weight: bold;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: .5em 4em .5em 4em;
+  border-radius: .2em;
+  color: #ffffff;
+}
+
+.content .title-content {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.content .description {
+  margin: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content img {
+  width: 3em;
+  height: 3em;
+}
+
+.content .desc-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  margin: 1em auto;
+}
+
+.content .desc-sec .desc-word {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.benefits {
+  margin-bottom: 5em;
+}
+
+.benefits .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits .image {
+  width: 70em;
+  height: 35em;
+  background-image: url(../images/Sika.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.benefits h1 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.benefits img {
+  width: 3em;
+  height: 3em;
+}
+
+.benefits .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.benefits .benefits-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.benefits .benefits-img p {
+  font-weight: normal;
+  font-size: 1em;
+}
+
+.benefits .benefits-img div {
+  margin: 2em 0 0 2em;
+  padding-right: 2em;
+}
+
+.steps {
+  margin-bottom: 5em;
+}
+
+.steps .head-steps {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.steps .box-steps {
+  margin: 0 5em;
+  padding: 20px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.steps .description-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-shadow: 2px 2px 10px 3px #e1e1e1;
+          box-shadow: 2px 2px 10px 3px #e1e1e1;
+  margin: .5em;
+  border-radius: 1em;
+  margin: 2em;
+  padding: 4em 0;
+}
+
+.steps .description-steps .steps-image {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 5em;
+  height: 5em;
+  padding: 1em;
+  margin-top: -7em;
+}
+
+.steps .description-steps .steps-image .image {
+  width: 5em;
+  height: 5em;
+}
+
+.steps .description-steps .steps-subhead {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.steps .description-steps .word-steps {
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 300px;
+  height: 100px;
+  margin: 1em 0 -1em 0;
+}
+
+.steps .description-steps .list-steps {
+  width: 300px;
+  height: 100px;
+}
+
+.steps .description-steps .whatsapp-steps {
+  font-weight: bold;
+}
+
+.reviews {
+  margin-bottom: 5em;
+}
+
+.reviews img {
+  width: 2em;
+  height: 2em;
+}
+
+.reviews .head-review {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 2em;
+  margin: .1em auto;
+}
+
+.reviews .container {
+  margin: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews .box-review {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #eeeeee;
+  padding: 2.5em;
+  -webkit-box-shadow: 2px 2px 10px 3px #e1e1e1;
+          box-shadow: 2px 2px 10px 3px #e1e1e1;
+}
+
+.reviews .box-review div {
+  margin: 1em auto;
+  word-wrap: break-word;
+}
+
+.reviews .box-review .quote-review {
+  margin-right: 2em;
+}
+
+.reviews .box-review .word-review {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  color: #969696;
+}
+
+.reviews .box-review .name-review {
+  font-size: 1.5rem;
+  color: #323232;
+  margin-bottom: .25rem;
+}
+
+.reviews .box-review .rating {
+  color: #fdb42a;
+  margin: 1rem 0;
+}
+
+.footer {
+  margin-top: 10em;
+  background-color: var(--third-color);
+  color: #ffffff;
+}
+
+.footer .title-footer {
+  font-size: 2em;
+}
+
+.footer .container {
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .company-footer, .footer .middle-footer, .footer .icon-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2.5em 2em;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .company-footer {
+  color: #ffffff;
+  font-size: var(--secondary-font-size);
+}
+
+.footer .company-footer div {
+  padding-top: 2em;
+}
+
+.footer .company-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.footer .company-footer a span {
+  color: var(--secondary-color);
+}
+
+.footer .company-footer img {
+  width: 15em;
+  height: auto;
+}
+
+.footer .middle-footer {
+  font-size: var(--secondary-font-size);
+}
+
+.footer .middle-footer .contact {
+  margin-top: 2em;
+}
+
+.footer .middle-footer .contact a {
+  font-size: 1.2em;
+  color: var(--secondary-color);
+}
+
+.footer .middle-footer .middle-title {
+  font-size: .7em;
+  margin-top: 1.5em;
+}
+
+.footer .middle-footer .middle-title .location-footer h1, .footer .middle-footer .middle-title p {
+  margin: 0;
+}
+
+.footer .middle-footer .middle-title .location-footer h1 h1, .footer .middle-footer .middle-title p h1 {
+  font-size: 1.5em;
+}
+
+.footer .middle-footer .middle-title .location-footer h1 p, .footer .middle-footer .middle-title p p {
+  font-size: 1.2em;
+}
+
+.footer .icon-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .icon-footer img {
+  margin: 1em 2em 0 0;
+  width: 2em;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */
